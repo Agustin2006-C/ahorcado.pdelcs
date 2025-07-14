@@ -1,0 +1,120 @@
+/* 🎨 Estilo general del cuerpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #497c9c, #e4e5e6);
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+/* 📦 Contenedor del juego */
+.container {
+  max-width: 650px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* 🏷️ Títulos */
+h1, h2 {
+  text-align: center;
+  color: #00416a;
+  margin-bottom: 20px;
+}
+
+/* 🧾 Inputs */
+input {
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;  /* 🔄 Cambio a gris claro */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #00416a;
+  outline: none;
+}
+
+/* 🔘 Botones */
+button {
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #00416a;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #022b44;
+  transform: scale(1.03);
+}
+
+/* 🏆 Tabla de puntuaciones */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th {
+  background-color: #00416a;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* 💬 Mensajes del juego */
+#mensaje {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d62828;
+  text-align: center;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    font-size: 14px;
+  }
+}

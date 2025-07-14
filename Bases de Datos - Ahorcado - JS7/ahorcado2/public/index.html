@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego del Ahorcado</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="sql" href="my.sql">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Juego del Ahorcado</h1>
+    <div id="juego">
+      <p id="palabra">Palabra: _ _ _ _</p>
+      <p id="vidas">Vidas: 6</p>
+      <input type="text" id="letra" maxlength="10" />
+      <button id="probar">Probar letra</button>
+      <p id="mensaje"></p>
+    </div>
+
+    <form id="formScore">
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+      <button type="submit">Guardar Score</button>
+    </form>
+
+    <button id="descargarPDF">📄 Descargar PDF</button>
+
+    <h2>🏆 Tabla de posiciones</h2>
+    <table id="tabla">
+      <thead>
+        <tr><th>Nombre</th><th>Puntos</th><th>Tiempo</th><th>Fecha</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
